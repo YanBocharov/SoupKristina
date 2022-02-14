@@ -10,21 +10,54 @@
 }
 .header {
    background: url('https://sun9-49.userapi.com/impg/QpHTD3KQBBYjPgxb8zazOblWgfc_kVdJ-1V3Sg/B1OXbDuz1pw.jpg?size=1280x800&quality=96&sign=3bdec798aa5fca822f5dbf454d1ed8e2&type=album') center center/cover no-repeat;
-   min-height: 90px;
+   min-height: 130px;
    &__list {
-      height: 90px;
+      height: 130px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-end;
       list-style-type: none;
+      text-align: center;
+   }
+   &__block {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 130px;
+      width: 130px;
+      transition: 0.5s all;
+      &:hover {
+         height: 135px;
+         width: 135px;
+      }
    }
    &__link {
-      cursor: pointer;
+      display: block;
       text-decoration: none;
       color: white;
+      font-size: 22px;
+      font-weight: 300;
+      z-index: 50;
+      margin-top: 8px;
    }
    &__img {
-      width: 100px;
-      height: 100px;
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      top: -6px;
+      transition: 0.5s all;
+   }
+   hr {
+      border: 2px #2af7ed solid;
+   }
+}
+.gallery {
+   text-align: center;
+   padding: 20px 0;
+   h1 {
+      text-transform: uppercase;
+      font-size: 60px;
+      color: #2af7ed;
    }
 }
