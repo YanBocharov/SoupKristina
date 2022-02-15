@@ -1,8 +1,10 @@
 * {
-   font-family: 'Comic Neue';
    border: 0;
    padding: 0;
    margin: 0;
+}
+body {
+   font-family: 'Comic Neue';
 }
 .container {
    max-width: 900px;
@@ -59,5 +61,22 @@
       text-transform: uppercase;
       font-size: 60px;
       color: #2af7ed;
+      margin-top: 30px;  
+      text-shadow: 0px 1px 0px #000;
+   }
+   &__img {
+      width: 400px;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0 auto;
+      border: 3px solid red;
+      outline: none;
+      
+   }
+   &__slider {
+      margin-top: 50px;
+      
    }
 }
