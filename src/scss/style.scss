@@ -1,0 +1,128 @@
+* {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+body {
+   font-family: 'Comic Neue';
+}
+.container {
+   max-width: 900px;
+   margin: 0 auto;
+}
+.header {
+   background: url('https://sun9-49.userapi.com/impg/QpHTD3KQBBYjPgxb8zazOblWgfc_kVdJ-1V3Sg/B1OXbDuz1pw.jpg?size=1280x800&quality=96&sign=3bdec798aa5fca822f5dbf454d1ed8e2&type=album') center center/cover no-repeat;
+   min-height: 130px;
+   &__list {
+      height: 130px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      list-style-type: none;
+      text-align: center;
+   }
+   &__block {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 130px;
+      width: 130px;
+      transition: 0.5s all;
+      &:hover {
+         height: 135px;
+         width: 135px;
+      }
+   }
+   &__link {
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      font-weight: 300;
+      z-index: 50;
+      margin-top: 8px;
+   }
+   &__img {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      top: -6px;
+      transition: 0.5s all;
+   }
+   hr {
+      border: 2px #2af7ed solid;
+   }
+}
+.gallery {
+   text-align: center;
+   padding: 20px 0;
+   h1 {
+      text-transform: uppercase;
+      font-size: 60px;
+      color: #2af7ed;
+      margin-top: 30px;  
+      text-shadow: 0px 1px 0px #000;
+   }
+   h2 {
+      margin-top: 30px;
+      margin-bottom: -40px;
+      font-size: 45px;
+      color: black;
+   }
+   &__img {
+      width: 400px;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0 auto;
+      border: 3px solid pink;
+      outline: none;
+      
+   }
+   &__slider {
+      margin-top: 50px;
+   }
+   &__soup {
+      margin-top: 90px;
+      margin-bottom: -40px;
+      font-size: 45px;
+      color: black;
+      font-weight: bold;
+   }
+}
+
+.order {
+   min-height: 500px;
+   padding: 50px 0;
+   &__title {
+      font-size: 60px;
+      text-align: center;
+      color: #ff8fa2;
+      text-shadow: 0px 1px 0px #000;;
+   }
+   &__list {
+      margin-top: 30px;
+      line-height: 30px;
+      width: 500px;
+   }
+}
+
+.contacts {
+   min-height: 300px;
+   &__title {
+      font-size: 60px;
+      text-align: center;
+      color: #ff8fa2;
+      text-shadow: 0px 1px 0px #000;;
+   }
+   &__link {
+      min-height: 200px;
+   }
+   &__img {
+      width: 37px;
+      float: left;
+      margin-right: 50px;
+   }
+}
