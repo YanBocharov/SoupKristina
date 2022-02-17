@@ -1,4 +1,5 @@
-@import '../scss/slider.scss';
+@import '../scss/slider';
+@import '../scss/animations';
 * {
    border: 0;
    padding: 0;
@@ -9,16 +10,21 @@ body {
 }
 .cloud {
    position: absolute;
+   &__animated {
+      animation-name: cloudShake;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+   }
 }
 .cloud1 {
    margin-left: 10%;
-   margin-top: 10%;
+   margin-top: 6%;
 }
 .cloud2 {
    right: 10%;
 }
 .cloud3 {
-  left: 3%;
+  left: 5%;
 }
 .cloud4 {
    right: 10%;
@@ -108,7 +114,8 @@ body {
       text-shadow: 0px 1px 0px #d4d4d4;
    }
    &__img {
-      width: 400px;
+      max-width: 400px;
+      max-height: 450px;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
