@@ -83,7 +83,7 @@
         right: 7%;
      }
 }
-@media (max-width: 425px) {
+@media (max-width: 414px) {
     .header {
         &__img {
             width: 100px;
@@ -134,7 +134,7 @@
            text-align: center;
         }
         &__link {
-           padding: 0 25px;
+           padding: 0 45px 0 0;
            display: flex;
            flex-direction: column;
            justify-content: space-between;
@@ -147,9 +147,10 @@
            margin-right: 20px;
         }
         &__block {
-           height: 60px;
-           display: flex;
-           align-items: center;
+            margin: 0 auto;
+            height: 60px;
+            display: flex;
+            align-items: center;
         }
         &__descr {
            font-size: 20px;
