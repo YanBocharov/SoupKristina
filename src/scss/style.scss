@@ -16,6 +16,26 @@ body {
       animation-iteration-count: infinite;
    }
 }
+.baloon {
+   display: block;
+   position: absolute;
+   z-index: 50;
+   &:hover {
+      background: url('../icons/лопнувшийПузырик.png') 0 0 / 100% no-repeat;
+   }
+}
+.baloon1 {
+   left: 40%;
+   top: 150%;
+}
+.baloon2 {
+   left: 38%;
+   top: 135%;
+}
+.baloon3 {
+   top: 115%;
+   left: 41%;
+}
 .cloud1 {
    margin-left: 10%;
    margin-top: 6%;
@@ -34,6 +54,7 @@ body {
    margin: 0 auto;
 }
 .header {
+   position: relative;   
    background-color: #ffb6c1;
    span {
       margin-right: 19px;
@@ -97,6 +118,8 @@ body {
    position: relative;
    padding: 20px 0;
    h1 {
+      width: 300px;
+      margin: 0 auto;
       text-transform: uppercase;
       font-size: 60px;
       color: #66d9ff;
@@ -146,10 +169,10 @@ body {
       text-align: center;
    }
    &__list {
+      max-width: 500px;
       padding: 0 25px;
       margin-top: 30px;
       line-height: 30px;
-      width: 500px;
    }
 }
 
@@ -200,9 +223,10 @@ body {
 .footer {
    display: flex;
    align-items: center;
-   height: 120px;
+   min-height: 120px;
    text-align: center;
    font-size: 40px;
    color: white;
    background-color: #66d9ff;
 }
+@import '../scss/media';

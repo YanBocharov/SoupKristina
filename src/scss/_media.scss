@@ -1,0 +1,215 @@
+@media (max-width: 1560px) {
+    .baloon {
+        display: block;
+        position: absolute;
+        z-index: 50;
+        &:hover {
+           background: url('../icons/лопнувшийПузырик.png') 0 0 / 100% no-repeat;
+        }
+     }
+     .baloon1 {
+        left: 35%;
+        top: 150%;
+     }
+     .baloon2 {
+        left: 33%;
+        top: 135%;
+     }
+     .baloon3 {
+        top: 115%;
+        left: 38%;
+     }
+}
+
+@media (max-width: 1024px) {
+    .baloon {
+        display: block;
+        position: absolute;
+        z-index: 50;
+        &:hover {
+           background: url('../icons/лопнувшийПузырик.png') 0 0 / 100% no-repeat;
+        }
+     }
+     .baloon1 {
+        left: 32%;
+        top: 150%;
+     }
+     .baloon2 {
+        left: 30%;
+        top: 135%;
+     }
+     .baloon3 {
+        top: 115%;
+        left: 35%;
+     }
+}
+
+@media (max-width: 768px) {
+    .baloon {
+        display: block;
+        position: absolute;
+        z-index: 50;
+        &:hover {
+           background: url('../icons/лопнувшийПузырик.png') 0 0 / 100% no-repeat;
+        }
+    }
+     .baloon1 {
+        left: 28%;
+        top: 150%;
+    }
+     .baloon2 {
+        left: 25%;
+        top: 135%;
+    }
+     .baloon3 {
+        top: 115%;
+        left: 30%;
+    }
+    .cloud {
+        width: 100px;
+        height: 100px;
+    }
+    .cloud1 {
+        margin-left: 5%;
+        margin-top: 6%;
+     }
+     .cloud2 {
+        right: 5%;
+     }
+     .cloud3 {
+       left: 3%;
+     }
+     .cloud4 {
+        right: 7%;
+     }
+}
+@media (max-width: 425px) {
+    .header {
+        &__img {
+            width: 100px;
+        }
+        &__link {
+            font-size: 17px;
+            &_1 {
+                margin: 3px 2px -12px 0;
+            }
+            &_2 {
+                margin: 2px -3px -5px 2px;
+            }
+            &_3 {    
+                margin: -2px 1px -17px 0
+            }
+        }
+    }
+    .baloon {
+        display: none;
+        position: absolute;
+        z-index: 50;
+        &:hover {
+           background: url('../icons/лопнувшийПузырик.png') 0 0 / 100% no-repeat;
+        }
+    }
+    .cloud {
+        display:none;
+    }
+    .order {
+        padding: 50px 0px;
+        &__title {
+            font-size: 45px;
+        }
+    }
+    .contacts {
+        min-height: 10px;
+        hr {
+           margin-top: 50px;
+           border: 2px solid pink;
+        }
+        &__title {
+           text-transform: uppercase;
+           font-size: 45px;
+           color: #66d9ff;
+           margin-top: 30px;  
+           text-shadow: 1px 1px 1px #d4d4d4;
+           font-weight: 800;
+           text-align: center;
+        }
+        &__link {
+           padding: 0 25px;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           
+           margin-top: 50px;
+        }
+        &__img {
+           width: 60px;
+           float: left;
+           margin-right: 20px;
+        }
+        &__block {
+           height: 60px;
+           display: flex;
+           align-items: center;
+        }
+        &__descr {
+           font-size: 20px;
+           font-weight: normal;
+        }
+        &__item {
+           display: block;
+           text-decoration: none;
+           color: black;
+        }
+     }
+     .gallery {
+        &__img {
+            width: 299px;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            margin: 0 auto;
+            border: 3px solid pink;
+            outline: none;
+        }
+        &__slider {
+            height: 100%;
+        }
+        h1 {
+            font-size: 45px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        &__soup {
+            font-size: 35px;
+        }
+     }
+    .footer {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        &__img { 
+            width: 90px;
+        }
+        &__link {
+            font-size: 15px;
+        }
+    }
+    .gallery {
+        &__img {
+            width: 185px;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            margin: 0 auto;
+            border: 3px solid pink;
+            outline: none;
+        }
+    }
+    .slick-list {
+        max-height: 310px;
+    }
+}

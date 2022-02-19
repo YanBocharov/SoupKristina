@@ -4,6 +4,14 @@ $(function() {
         arrows: true,
         dots: true,
         waitForAnimate: false,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 426,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
 });
