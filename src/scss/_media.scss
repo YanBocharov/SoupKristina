@@ -163,7 +163,7 @@
      }
      .gallery {
         &__img {
-            width: 299px;
+            width: 286px;
             // background-repeat: no-repeat;
             // background-size: cover;
             // background-position: center;
@@ -184,6 +184,9 @@
             font-size: 35px;
         }
      }
+     .slick-list {
+        max-height: 440px;
+    }
     .footer {
         font-size: 28px;
     }
