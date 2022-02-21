@@ -82,8 +82,46 @@
      .cloud4 {
         right: 7%;
      }
+    .contacts {
+        &__descr {
+            font-size: 17px;
+        }
+        &__img {
+            margin-right: 0px;
+        }
+        &__item {
+            width: 170px;
+        }
+        &__link {
+            justify-content: space-around;
+        }
+        &__title {
+            font-size: 50px;
+        }
+    }
+    .footer {
+        h2 {
+            font-size: 45px;
+        }
+    }
+    .order {
+        &__title {
+            font-size: 45px;
+        }
+    }
+    .gallery {
+        h1 {
+            font-size: 45px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        &__soup {
+            font-size: 35px;
+        }
+    }
 }
-@media (max-width: 414px) {
+@media (max-width: 425px) {
     .header {
         &__img {
             width: 100px;
@@ -134,11 +172,10 @@
            text-align: center;
         }
         &__link {
-           padding: 0 45px 0 0;
+           padding: 0 65px 0 0;
            display: flex;
            flex-direction: column;
            justify-content: space-between;
-           
            margin-top: 50px;
         }
         &__img {
@@ -158,13 +195,14 @@
         }
         &__item {
            display: block;
+           width: 200px;
            text-decoration: none;
            color: black;
         }
      }
      .gallery {
         &__img {
-            width: 286px;
+            width: 275px;
             // background-repeat: no-repeat;
             // background-size: cover;
             // background-position: center;
@@ -193,6 +231,36 @@
     }
 }
 
+@media (max-width: 375px) {
+    .contacts {
+        &__link {
+            padding-left: 25px;
+        }
+    }
+    .header {
+        &__img { 
+            width: 90px;
+        }
+        &__link {
+            font-size: 15px;
+        }
+    }
+    .gallery {
+        &__img {
+            width: 240px;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            margin: 0 auto;
+            border: 3px solid pink;
+            outline: none;
+        }
+    }
+    .slick-list {
+        max-height: 385px;
+    }
+}
+
 @media (max-width: 320px) {
     .header {
         &__img { 
@@ -217,3 +285,4 @@
         max-height: 310px;
     }
 }
+

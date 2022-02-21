@@ -7,7 +7,7 @@ $(function() {
         adaptiveHeight: true,
         responsive: [
             {
-                breakpoint: 426,
+                breakpoint: 425,
                 settings: {
                     arrows: false
                 }
