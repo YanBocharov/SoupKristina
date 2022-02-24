@@ -11,6 +11,12 @@ $(function() {
                 settings: {
                     arrows: false
                 }
+            },
+            {
+                breakpoint: 429,
+                settings: {
+                    arrows: false
+                }
             }
         ]
     });

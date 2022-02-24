@@ -43,7 +43,6 @@
         left: 35%;
      }
 }
-
 @media (max-width: 768px) {
     .baloon {
         display: block;
@@ -283,6 +282,42 @@
     }
     .slick-list {
         max-height: 310px;
+    }
+}
+@media (max-width: 428px) {
+    .cloud {
+        display: none;
+    }
+    .baloon {
+        display: none;
+        position: absolute;
+        z-index: 50;
+        &:hover {
+           background: url('../icons/лопнувшийПузырик.png') 0 0 / 100% no-repeat;
+        }
+    }
+    .gallery {
+        &__img {
+            max-width: 295px;
+        }
+    }
+    .slick-list {
+        height: 470px;
+    }
+    .contacts {
+        &__item {
+            width: 100%;
+        }
+        &__link {
+            display: block;
+            padding: 0 80px;
+        }
+        &__block {
+            margin: 10px 0;
+        }
+        &__img {
+            margin-right: 10px;
+        }
     }
 }
 
